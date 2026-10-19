@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#06111d">
+  <title>TV EN VIVO · VIDAA</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="app">
+  <aside class="sidebar">
+    <header class="brand">
+      <div class="brand-tv">▣</div>
+      <div><div class="brand-title">TV EN <span>VIVO</span></div><div class="brand-sub">HISENSE VIDAA</div></div>
+    </header>
+    <nav id="nav" class="nav">
+      <button class="focusable nav-item active" data-action="home"><span>⌂</span>Inicio</button>
+      <button class="focusable nav-item" data-action="channels"><span>▰</span>Canales</button>
+      <button class="focusable nav-item" data-action="mexico"><span>🇲🇽</span>México</button>
+      <button class="focusable nav-item" data-action="spanish"><span>◎</span>Español</button>
+      <button class="focusable nav-item" data-action="world"><span>◎</span>Mundo</button>
+      <button class="focusable nav-item" data-action="favorites"><span>★</span>Favoritos</button>
+      <button class="focusable nav-item" data-action="guide"><span>▦</span>Guía TV</button>
+      <button class="focusable nav-item" data-action="search"><span>⌕</span>Buscar</button>
+      <button class="focusable nav-item" data-action="settings"><span>⚙</span>Configuración</button>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="hero">
+      <video id="video" class="video" playsinline></video>
+      <div id="heroBg" class="hero-bg"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-info">
+        <div class="live-pill">● EN VIVO</div>
+        <div class="hero-channel">
+          <div id="heroLogo" class="hero-logo">✦</div>
+          <div>
+            <h1 id="heroName">Las Estrellas HD</h1>
+            <div class="current-line"><strong id="heroTime">15:00 – 16:00</strong><span id="heroProgram">Noticiero En Punto</span></div>
+            <div class="progress"><div id="progress"></div></div>
+            <div class="next-line">Siguiente: <span id="heroNext">16:00 – 17:00 · El Amor Invencible</span></div>
+            <div class="badges"><span>HD</span><span>HLS</span><span>1080p</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clock-box">
+        <div class="clock-row"><b id="clock">15:37</b><span>⌁</span></div>
+        <div id="date">Lun 19 Oct 2026</div>
+        <small id="netState">Internet conectado</small>
+      </div>
+    </section>
+
+    <section id="homeView" class="view">
+      <h2>Recomendados para ti</h2>
+      <div id="channelRow" class="row channel-row"></div>
+
+      <h2>Categorías</h2>
+      <div id="categoryRow" class="row category-row"></div>
+
+      <div class="guide-head">
+        <div><h2>Guía de programación</h2><small id="guideDate">Hoy</small></div>
+        <div class="hours"><span>15:00</span><span>15:30</span><span>16:00</span><span>16:30</span><span>17:00</span></div>
+      </div>
+      <div id="guideGrid" class="guide-grid"></div>
+    </section>
+  </main>
+
+  <div id="overlay" class="overlay hidden">
+    <section id="panel" class="panel">
+      <div class="panel-head"><h2 id="panelTitle">Buscar</h2><button id="panelClose" class="focusable close">✕</button></div>
+      <div id="panelBody"></div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
