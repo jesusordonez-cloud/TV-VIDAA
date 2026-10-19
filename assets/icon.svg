@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#39c4ff"/><stop offset="1" stop-color="#087cf2"/></linearGradient></defs>
+<rect width="512" height="512" rx="105" fill="#06111d"/>
+<rect x="78" y="126" width="356" height="270" rx="45" fill="none" stroke="url(#g)" stroke-width="34"/>
+<path d="M175 86l52 42M337 86l-52 42" stroke="#35baff" stroke-width="24" stroke-linecap="round"/>
+<text x="256" y="300" text-anchor="middle" fill="#fff" font-family="Arial" font-weight="700" font-size="110">TV</text>
+</svg>
