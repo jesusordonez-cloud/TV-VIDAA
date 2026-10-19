@@ -1,0 +1,12 @@
+{
+  "notice": "Agrega únicamente streams que tengas autorización de reproducir. No se incluyen enlaces de canales comerciales ni mecanismos para evadir DRM.",
+  "channels": [
+    {
+      "id": "canal-autorizado",
+      "name": "Canal autorizado",
+      "logo": "TV",
+      "region": "mexico",
+      "stream": "https://TU-DOMINIO/stream.m3u8"
+    }
+  ]
+}
